@@ -1,8 +1,18 @@
 <template>
-<div id="app">
+<div id="app" style="height: 100vh; width: 100%;">
+    <Menu />
     <router-view />
 </div>
 </template>
+
+<script>
+import Menu from '@/components/Menu.vue'
+export default {
+    components: {
+        Menu
+    }
+}
+</script>
 
 <style>
 #app {
@@ -11,18 +21,4 @@
     -moz-osx-font-smoothing: grayscale;
     color: #000000;
 }
-
-#nav {
-    padding: 30px;
-}
-
-#nav a {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-    color: #42b983;
-}
-</style>
 </style>

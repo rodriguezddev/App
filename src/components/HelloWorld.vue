@@ -11,7 +11,6 @@
         <ion-label>{{ post.data.title }}</ion-label>
       </ion-item>
     </ion-list>
-
   </div>
 </template>
 

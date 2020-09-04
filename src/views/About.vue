@@ -1,18 +1,17 @@
 <template>
-  <div class="about">
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Image</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-img :src="imageSrc"></ion-img>
-    <ion-button @click="$router.go(-1)">Back</ion-button>
-  </div>
+<div class="about">
+    <Producto />
+</div>
 </template>
 
 <script>
+import Producto from '@/components/Producto.vue'
+import Envios from '@/components/Envios.vue'
 export default {
-  props: ['imageSrc']
+    name: 'about',
+    components: {
+        Producto,
+        Envios
+    }
 }
 </script>
-
