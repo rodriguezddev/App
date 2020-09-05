@@ -8,8 +8,8 @@
         <div v-for="tarjeta in tarjetasbancos" :class="tarjeta.fondo" class="swiper-slide active-slider tamañosld 0" style="width: 300px !important; height: 210px;
     border-radius: 10px;  border-top-left-radius: 8; color: #ffffff; background-size: cover; background-repeat: repeat-y; padding-left: 2rem;">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left text-left" style="overflow: hidden; margin-left: -10px; height: 31px; margin-top: 8px;filter: brightness(100);">
-                    <img v-bind:style="{width:tarjeta.width,filter:tarjeta.filter,marginTop:tarjeta.top,marginLeft:tarjeta.left}" style=" float: left; text-align: left;" class="float-left tarjeta_logo_v" :src="tarjeta.img" />
+                <div style=" margin-top: 15px;filter: brightness(100); width:40%">
+                    <div :class="tarjeta.img" v-bind:style="{width:tarjeta.width,filter:tarjeta.filter,marginTop:tarjeta.top,marginLeft:tarjeta.left}" style=" float: left; text-align: left;" class="float-left tarjeta_logo_v"></div>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 float-left text-left" style="overflow: hidden; margin-left: -10px; height: 43px; margin-top: 2px;">
@@ -205,119 +205,119 @@ export default {
                         }
 
                         if (response.data[i].I_bancos == 1) {
-                            response.data[i].img = `@/assets/Bancos_color/BancodeCrédito.svg`
+                            response.data[i].img = "logo1"
                             response.data[i].width = "82px"
                             response.data[i].filter = "grayscale(1)"
                             response.data[i].left = "-8px"
                             response.data[i].top = "-4px"
 
                         } else if (response.data[i].I_bancos == 2) {
-                            response.data[i].img = `@/assets/Bancos_color/BancoCencosud.svg`
+                            response.data[i].img = "logo2"
                             response.data[i].width = "71px"
                             response.data[i].left = "-15px"
                             response.data[i].top = "0px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 3) {
-                            response.data[i].img = `@/assets/Bancos_color/BancodeComercio.svg`
+                            response.data[i].img = "logo3"
                             response.data[i].width = "71px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "0px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 4) {
-                            response.data[i].img = `@/assets/Bancos_color/BancoAzteca.svg`
+                            response.data[i].img = "logo4"
                             response.data[i].width = "105px"
                             response.data[i].left = "-11px"
                             response.data[i].top = "-8px"
                             response.data[i].filter = "grayscale(1)"
 
                         } else if (response.data[i].I_bancos == 5) {
-                            response.data[i].img = `@/assets/Bancos_color/BancodelaNación.svg`
+                            response.data[i].img = "logo5"
                             response.data[i].width = "105px"
                             response.data[i].left = "-36px"
                             response.data[i].top = "-8px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 6) {
-                            response.data[i].img = `@/assets/Bancos_color/BancoFalabella.svg`
+                            response.data[i].img = "logo6"
                             response.data[i].width = "91px"
                             response.data[i].left = "0px"
                             response.data[i].top = "-4px"
                             response.data[i].filter = "grayscale(1)"
 
                         } else if (response.data[i].I_bancos == 7) {
-                            response.data[i].img = `@/assets/Bancos_color/BBVAcontinental.svg`
+                            response.data[i].img = "logo7"
 
                             response.data[i].width = "91px"
                             response.data[i].left = "-17px"
                             response.data[i].top = "-4px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 8) {
-                            response.data[i].img = `@/assets/Bancos_color/BancoRipley.svg`
+                            response.data[i].img = "logo8"
                             response.data[i].width = "91px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "-4px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 9) {
-                            response.data[i].img = `@/assets/Bancos_color/Interbank.svg`
+                            response.data[i].img = "logo9"
                             response.data[i].width = "105px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "-4px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 10) {
-                            response.data[i].img = `@/assets/Bancos_color/ScotiaBank.svg`
+                            response.data[i].img = "logo10"
                             response.data[i].width = "110px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "-8px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 11) {
-                            response.data[i].img = `@/assets/Bancos_color/GNB.svg`
+                            response.data[i].img = "logo11"
                             response.data[i].width = "100px"
                             response.data[i].left = "-21px"
                             response.data[i].top = "-6px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 12) {
-                            response.data[i].img = `@/assets/Bancos_color/MiBanco.svg`
+                            response.data[i].img = "logo12"
                             response.data[i].width = "91px"
                             response.data[i].left = "-21px"
                             response.data[i].top = "-3px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 13) {
-                            response.data[i].img = `@/assets/Bancos_color/FinancieraUNO.svg`
+                            response.data[i].img = "logo13"
                             response.data[i].width = "110px"
                             response.data[i].left = "-3px"
                             response.data[i].top = "-8px"
                             response.data[i].filter = "grayscale(1)"
                         } else if (response.data[i].I_bancos == 14) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaArequipa.svg`
+                            response.data[i].img = "logo14"
                             response.data[i].width = "85px"
                             response.data[i].left = "-3px"
                             response.data[i].top = "-1px"
                             response.data[i].filter = "invert(1)"
                         } else if (response.data[i].I_bancos == 15) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaCusco.svg`
+                            response.data[i].img = "logo15"
                             response.data[i].width = "95px"
                             response.data[i].left = "-3px"
                             response.data[i].top = "-1px"
                             response.data[i].filter = "invert(1)"
                         } else if (response.data[i].I_bancos == 16) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaHuancayo.svg`
+                            response.data[i].img = "logo16"
                             response.data[i].width = "95px"
                             response.data[i].left = "-3px"
                             response.data[i].top = "-1px"
                             response.data[i].filter = "invert(1)"
                         } else if (response.data[i].I_bancos == 17) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaIca.svg`
+                            response.data[i].img = "logo17"
                             response.data[i].width = "95px"
                             response.data[i].left = "-3px"
                             response.data[i].top = "-1px"
                             response.data[i].filter = "invert(1)"
                         } else if (response.data[i].I_bancos == 18) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaPiura.svg`
+                            response.data[i].img = "logo18"
                             response.data[i].width = "82px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "0px"
                             response.data[i].filter = "invert(1)"
                         } else if (response.data[i].I_bancos == 19) {
-                            response.data[i].img = `@/assets/Bancos_color/CajaSullana.svg`
+                            response.data[i].img = "logo19"
                             response.data[i].width = "93px"
                             response.data[i].left = "-5px"
                             response.data[i].top = "-4px"
@@ -438,5 +438,195 @@ export default {
     100% {
         background-position: 100%;
     }
+}
+
+.logo1 {
+    background-image: url(../assets/Bancos_color/BancodeCrédito.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo2 {
+    background-image: url(../assets/Bancos_color/BancoCencosud.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo3 {
+    background-image: url(../assets/Bancos_color/BancodeComercio.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo4 {
+    background-image: url(../assets/Bancos_color/BancoAzteca.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo5 {
+    background-image: url(../assets/Bancos_color/BancodelaNación.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo6 {
+    background-image: url(../assets/Bancos_color/BancoFalabella.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo7 {
+    background-image: url(../assets/Bancos_color/BBVAcontinental.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo8 {
+    background-image: url(../assets/Bancos_color/BancoRipley.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo9 {
+    background-image: url(../assets/Bancos_color/Interbank.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo10 {
+    background-image: url(../assets/Bancos_color/ScotiaBank.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo11 {
+    background-image: url(../assets/Bancos_color/GNB.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo12 {
+    background-image: url(../assets/Bancos_color/MiBanco.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo13 {
+    background-image: url(../assets/Bancos_color/FinancieraUNO.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo14 {
+    background-image: url(../assets/Bancos_color/CajaArequipa.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo15 {
+    background-image: url(../assets/Bancos_color/CajaCusco.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo16 {
+    background-image: url(../assets/Bancos_color/CajaHuancayo.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo17 {
+    background-image: url(../assets/Bancos_color/CajaIca.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo18 {
+    background-image: url(../assets/Bancos_color/CajaPiura.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.logo19 {
+    background-image: url(../assets/Bancos_color/CajaSullana.svg);
+    width: 100%;
+    height: 2rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 </style>
